@@ -204,7 +204,6 @@ cd %oc3_projectname%-tools
 oc4 process -f %oc3_projectname%-buildconfigs.yaml -l migration=%oc3_projectname%-migration-template | oc4 create -f -
 oc4 get buildconfig
 
-
 pause 
 oc4 delete all --selector migration=%oc3_projectname%-migration-template
 
